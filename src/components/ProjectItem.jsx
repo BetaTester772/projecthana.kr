@@ -5,7 +5,7 @@ export default function ProjectItem({ title, author, link }) {
   const navigate = useNavigate();
   return (
     <>
-      <Container onClick={() => {navigate(link)}}>
+      <Container onClick={() => {window.location.href = link}}>
           <Name>{ title }</Name>
           <Author>{ author }</Author>
       </Container>
