@@ -13,6 +13,10 @@ body {
     overflow-x: hidden;
 }
 
+* > a {
+    color: rgba(140, 140, 140, 0.71);
+}
+
 .link {
     color: black !important;
     text-decoration: none;
@@ -25,4 +29,8 @@ body {
 .mainpagemain {
     color: white;
     display: flex;
+}
+
+.logosvg {
+    height: 40px;
 }

@@ -1,6 +1,5 @@
 import Header from './components/Header.jsx';
 import styled from '@emotion/styled';
-import HASLogo from './assets/has_logo_white.svg';
 
 export default function App() {
   return (

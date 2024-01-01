@@ -1,14 +1,13 @@
 import styled from '@emotion/styled';
 
-export default function ResearchItem({ title, author, reportlink, posterlink }) {
+export default function ProjectItem({ title, author, link }) {
   return (
     <>
       <Container>
         <Name>{ title }</Name>
-        <Author>{ author }</Author>
         <ButtonArea>
-          <a href={ reportlink } target="_blank" rel="noreferrer"><DownloadButton>논문 다운로드</DownloadButton></a>
-          <a href={ posterlink } target="_blank" rel="noreferrer"><DownloadButton>포스터 다운로드</DownloadButton></a>
+          <Author>{ author }</Author>
+          <a href={ link }><DownloadButton>내용 보기</DownloadButton></a>
         </ButtonArea>
       </Container>
     </>
@@ -16,15 +15,7 @@ export default function ResearchItem({ title, author, reportlink, posterlink }) 
 }
 
 const Container = styled.div`
-  padding: 10px;
-  margin: 10px;
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border: 1px solid black;
-  border-radius: 3px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
 `;
 
 const Name = styled.h2`
@@ -36,16 +27,18 @@ const Name = styled.h2`
 const Author = styled.h3`
   font-size: 15px;
   margin: 10px 0;
+  margin-right: 5px;
 `;
 
 const ButtonArea = styled.div`
   display: flex;
   flex-direction: row;
+  align-items: center;
 `;
 
 const DownloadButton = styled.button`
   border: 1px solid black;
-  padding: 8px 10px;
+  padding: 5px;
   font-weight: bold;
   margin-right: 5px;
   background-color: white;
