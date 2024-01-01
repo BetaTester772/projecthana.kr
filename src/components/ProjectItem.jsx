@@ -1,21 +1,29 @@
 import styled from '@emotion/styled';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function ProjectItem({ title, author, link }) {
+  const navigate = useNavigate();
   return (
     <>
-      <Container>
-        <Name>{ title }</Name>
-        <ButtonArea>
+      <Container onClick={() => {navigate(link)}}>
+          <Name>{ title }</Name>
           <Author>{ author }</Author>
-          <a href={ link }><DownloadButton>내용 보기</DownloadButton></a>
-        </ButtonArea>
       </Container>
     </>
   );
 }
 
 const Container = styled.div`
-  margin-top: 10px;
+  padding: 10px;
+  margin: 15px 0;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 `;
 
 const Name = styled.h2`
@@ -26,28 +34,6 @@ const Name = styled.h2`
 
 const Author = styled.h3`
   font-size: 15px;
-  margin: 10px 0;
-  margin-right: 5px;
-`;
-
-const ButtonArea = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-`;
-
-const DownloadButton = styled.button`
-  border: 1px solid black;
-  padding: 5px;
-  font-weight: bold;
-  margin-right: 5px;
-  background-color: white;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    background-color: black;
-    color: white;
-    transition: all 0.2s ease-in-out;
-  }
+  margin: 0;
+  margin-top: 5px;
 `;

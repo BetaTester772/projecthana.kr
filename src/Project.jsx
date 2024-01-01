@@ -9,6 +9,7 @@ export default function Project() {
       <Header/>
       <Container>
         <h1>융합탐구팀</h1>
+        <h2>융합탐구팀의 모든 연구를 보실 수 있습니다.</h2>
         <ItemArea>
           { data.map((item, index) => (
             <ProjectItem
@@ -34,6 +35,10 @@ const Container = styled.div`
   }
   @media (max-width: 450px) {
     width: 100%;
+  }
+  & > h2 {
+    margin: 10px auto;
+    font-size: 15px;
   }
 `;
 

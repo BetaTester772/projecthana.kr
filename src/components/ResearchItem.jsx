@@ -17,8 +17,8 @@ export default function ResearchItem({ title, author, reportlink, posterlink }) 
 
 const Container = styled.div`
   padding: 10px;
-  margin: 10px;
-  width: 400px;
+  width: 100%;
+  margin: 15px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;

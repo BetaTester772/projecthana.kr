@@ -9,6 +9,7 @@ export default function Research() {
       <Header/>
       <Container>
         <h1>연구논문팀</h1>
+        <h2>연구논문팀의 포스터와 보고서를 여기에서 보실 수 있습니다.</h2>
         <ItemArea>
           { data.map((item, index) => {
             return <ResearchItem key={ index } author={ item.author } title={ item.title } posterlink={
@@ -31,6 +32,10 @@ const Container = styled.div`
   & > h1 {
     margin: 0 auto;
   }
+  & > h2 {
+    margin: 10px auto;
+    font-size: 15px;
+  }
 
   @media (max-width: 450px) {
     width: 100%;
@@ -38,9 +43,5 @@ const Container = styled.div`
 `;
 
 const ItemArea = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
   width: 100%;
 `;
