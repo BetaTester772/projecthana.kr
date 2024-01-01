@@ -34,3 +34,7 @@ body {
 .logosvg {
     height: 40px;
 }
+
+.noscroll {
+    overflow: hidden;
+}

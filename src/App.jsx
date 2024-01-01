@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 
 export default function App() {
   return (
-    <MainDiv>
+    <MainDiv className="noscroll">
       <Header/>
       <Container>
         <TextArea>
