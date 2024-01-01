@@ -62,7 +62,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: '10',
+        path: '7',
         element: (
           <>
             <Header/>
@@ -71,7 +71,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: '11',
+        path: '8',
         element: (
           <>
             <Header/>
