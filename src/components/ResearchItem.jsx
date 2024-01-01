@@ -1,29 +1,39 @@
 import styled from '@emotion/styled';
 
-export default function ResearchItem({ title, author, reportlink, posterlink }) {
+export default function ResearchItem({ title, author, reportlink, posterlink, preview }) {
   return (
     <>
-      <Container>
-        <Name>{ title }</Name>
-        <Author>{ author }</Author>
-        <ButtonArea>
-          <a href={ reportlink } target="_blank" rel="noreferrer"><DownloadButton>논문 다운로드</DownloadButton></a>
-          <a href={ posterlink } target="_blank" rel="noreferrer"><DownloadButton>포스터 다운로드</DownloadButton></a>
-        </ButtonArea>
-      </Container>
+      <Mama>
+        <Container>
+          <Name>{ title }</Name>
+          <Author>{ author }</Author>
+          <ButtonArea>
+            <a href={ reportlink } target="_blank" rel="noreferrer"><DownloadButton>논문 다운로드</DownloadButton></a>
+            <a href={ posterlink } target="_blank" rel="noreferrer"><DownloadButton>포스터 다운로드</DownloadButton></a>
+          </ButtonArea>
+        </Container>
+        <img src={ preview } alt="preview" width="100px" height="100px"/>
+      </Mama>
     </>
   );
 }
 
-const Container = styled.div`
+const Mama = styled.div`
   padding: 15px;
   width: calc(100% - 30px);
   margin: 25px 0;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+`;
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 const Name = styled.span`

@@ -16,7 +16,8 @@ export default function Research() {
               `${ window.location.origin }/files/research/${ item.id }_poster.pdf`
             } reportlink={
               `${ window.location.origin }/files/research/${ item.id }_paper.pdf`
-            }/>;
+            } preview={ `/files/poster_preview/preview_${ item.id }.jpg` }
+            />;
           }) }
         </ItemArea>
       </Container>
