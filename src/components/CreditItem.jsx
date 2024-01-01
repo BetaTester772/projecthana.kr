@@ -51,11 +51,9 @@ const Name = styled.h2`
 
 const Link = styled.img`
   height: 30px;
-  border: 1px solid black;
     margin: 5px;
 `;
 
 const LinkArea = styled.div`
   margin: 5px;
-  border: 1px solid black;
   `;

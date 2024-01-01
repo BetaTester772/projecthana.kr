@@ -46,6 +46,6 @@ const HeaderArea = styled.div`
     width: 100%;
   }
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
+  border-radius: 8px;
   background-color: white;
 `;

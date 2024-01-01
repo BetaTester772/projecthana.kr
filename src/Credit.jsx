@@ -22,7 +22,6 @@ export default function Credit() {
 const Container = styled.div`
     margin: 0 auto;
     width: min(1500px, 100%);
-  border: 1px solid black;
     padding: 10px 5px;
     & > h1 {
         margin: 0 auto;
@@ -35,5 +34,4 @@ const ItemArea = styled.div`
     justify-content: space-around;
     align-items: center;
     width: 100%;
-  border: 1px solid black;
 `;

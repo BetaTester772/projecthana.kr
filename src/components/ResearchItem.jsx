@@ -16,24 +16,23 @@ export default function ResearchItem({ title, author, reportlink, posterlink }) 
 }
 
 const Container = styled.div`
-  padding: 10px;
-  width: 100%;
-  margin: 15px 0;
+  padding: 15px;
+  width: calc(100% - 30px);
+  margin: 25px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 1px solid black;
-  border-radius: 3px;
+  border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 `;
 
-const Name = styled.h2`
+const Name = styled.span`
   font-size: 20px;
   margin: 0;
   word-break-cjk: break-word;
 `;
 
-const Author = styled.h3`
+const Author = styled.span`
   font-size: 15px;
   margin: 10px 0;
 `;
