@@ -12,7 +12,7 @@ export default function ResearchItem({ title, author, reportlink, posterlink, pr
             <a href={ posterlink } target="_blank" rel="noreferrer"><DownloadButton>포스터 다운로드</DownloadButton></a>
           </ButtonArea>
         </Container>
-        <img src={ preview } alt="preview" height="100px"/>
+        <img src={ preview } alt="preview" loading="lazy" height="100px"/>
       </Mama>
     </>
   );
