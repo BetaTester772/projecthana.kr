@@ -16,7 +16,7 @@ export default function Project() {
               key={ index }
               title={ item.title }
               author={ item.author }
-              link={ item.link ? item.link : `https://projecthana.kr/project/${index+1}` }
+              link={ item.link ? item.link : `/project/${index+1}` }
               target={ item.link ? "_blank" : "_self" }
             />
           )) }
