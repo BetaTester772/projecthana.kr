@@ -17,6 +17,7 @@ export default function Project() {
               title={ item.title }
               author={ item.author }
               link={ item.link ? item.link : `https://projecthana.kr/project/${index+1}` }
+              target={ item.link ? "_blank" : "_self" }
             />
           )) }
         </ItemArea>

@@ -1,11 +1,20 @@
 import styled from '@emotion/styled';
 import { useNavigate } from 'react-router-dom';
 
-export default function ProjectItem({ title, author, link }) {
+export default function ProjectItem({ title, author, link, target }) {
   const navigate = useNavigate();
+
+  const openLink = () => {
+    if (target === "_blank") {
+      window.open(link, "_blank");
+    } else {
+      window.location.href = link;
+    }
+  };
+
   return (
     <>
-      <Container onClick={() => {window.location.href = link}}>
+      <Container onClick={ openLink }>
           <Name>{ title }</Name>
           <Author>{ author }</Author>
       </Container>
