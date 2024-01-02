@@ -4,6 +4,7 @@ import CreditItem from './components/CreditItem.jsx';
 
 import RyanPhoto from './assets/pfp/ryan.png';
 import HoseogPhoto from './assets/pfp/hoseong.jpg';
+import JinseoPhoto from './assets/pfp/jinseo.png';
 
 export default function Credit() {
   return (
@@ -16,6 +17,8 @@ export default function Credit() {
                       profile={ RyanPhoto }/>
           <CreditItem name={ '안호성' } role={ '프엔' } links={ ['https://github.com/BetaTester772'] }
                       profile={ HoseogPhoto }/>
+          <CreditItem name={ '박진서' } role={ '로고 디자인' } links={ [] }
+                      profile={ JinseoPhoto }/>
         </ItemArea>
       </Container>
     </>
