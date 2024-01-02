@@ -14,7 +14,7 @@ export default function Credit() {
         <ItemArea>
           <CreditItem name={ '권동한' } role={ '대표' } links={ [] }
                       profile={ RyanPhoto }/>
-          <CreditItem name={ '안호성' } role={ '프엔' } links={ [] }
+          <CreditItem name={ '안호성' } role={ '프엔' } links={ ['https://github.com/BetaTester772'] }
                       profile={ HoseogPhoto }/>
         </ItemArea>
       </Container>
