@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import CreditItem from './components/CreditItem.jsx';
 
 import RyanPhoto from './assets/pfp/ryan.png';
+import HoseogPhoto from './assets/pfp/hoseong.jpg';
 
 export default function Credit() {
   return (
@@ -13,6 +14,8 @@ export default function Credit() {
         <ItemArea>
           <CreditItem name={ '권동한' } role={ '대표' } links={ [] }
                       profile={ RyanPhoto }/>
+          <CreditItem name={ '안호성' } role={ '프엔' } links={ [] }
+                      profile={ HoseogPhoto }/>
         </ItemArea>
       </Container>
     </>
