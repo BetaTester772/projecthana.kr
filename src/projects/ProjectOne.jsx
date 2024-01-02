@@ -44,7 +44,9 @@ Footer 페이지를 통해 연서혼밥과 저희에 대해서 알아가실 수 
 
 
 ## My page
-[참고영상] (https://drive.google.com/file/d/1HuZrFMhCrN8_mVjDm-ziKbjbWIsQLYqH/view?usp=drive_link)
+
+[참고영상](https://drive.google.com/file/d/1HuZrFMhCrN8_mVjDm-ziKbjbWIsQLYqH/view?usp=drive_link)
+
 My page 같은 경우 홈 화면에서 헤더에 있는 My page 텍스트를 클릭하면 들어오실 수 있습니다. 주로 연결된 데이터베이스에서 데이터를 수신하여 데이터 시각화를 제공하는 정보 관리 도구라고 볼 수 있습니다. My page는 본인과 관련된 정보들을 확인할 수 있는 곳입니다. 상품 등록 카테고리 분류, 컬렉션, 구매내역, 설정, FAQs로 나뉘어져 있습니다.
 ### 상품등록
 상품 등록에는 Admin Dashboard와 Basic Dashboard가 있는데 관리자와 이용자로 나누기 위함입니다. 나누지 않았을 때 생길 수 있는 문제점을 방지하기 위함입니다. 두 Dashboard에는 권한 차이가 존재하며 이용자가 어플을 맘대로 수정하지 못하도록 하기 위해 있습니다. 상품 등록 창에는 상품명, 카테고리, 컬렉션, 상태, 가격, 만든 날짜, 판매인이 뜨도록 하였고, 상품을 등록하고 싶을 때는 추가 버튼을 눌러 상품 사진과 다양한 정보들을 입력하면 됩니다. 상품 등록을 완료하면 이름, 이메일, 날짜 등이 데이터에 입력되어 저장됩니다.
