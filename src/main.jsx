@@ -9,7 +9,6 @@ import ProjectOne from './projects/ProjectOne.jsx';
 import Header from './components/Header.jsx';
 import ProjectTwo from './projects/ProjectTwo.jsx';
 import ProjectThree from './projects/ProjectThree.jsx';
-import ProjectFive from './projects/ProjectFive.jsx';
 import ProjectTen from './projects/ProjectTen.jsx';
 import ProjectEleven from './projects/ProjectEleven.jsx';
 
@@ -49,15 +48,6 @@ const router = createBrowserRouter([
           <>
             <Header/>
             <ProjectThree />
-          </>
-        ),
-      },
-      {
-        path: '5',
-        element: (
-          <>
-            <Header/>
-            <ProjectFive />
           </>
         ),
       },
